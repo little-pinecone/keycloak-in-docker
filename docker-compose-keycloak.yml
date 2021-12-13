@@ -1,0 +1,37 @@
+version: '3.3'
+services:
+  keycloak:
+    image: jboss/keycloak:${KEYCLOAK_VERSION}
+    ports:
+      - "8024:8080"
+    environment:
+      - KEYCLOAK_USER=${KEYCLOAK_USER}
+      - KEYCLOAK_PASSWORD=${KEYCLOAK_PASSWORD}
+      - DB_DATABASE=${KEYCLOAK_DATABASE_NAME}
+      - DB_USER=${KEYCLOAK_DATABASE_USER}
+      - DB_PASSWORD=${KEYCLOAK_DATABASE_PASSWORD}
+      - DB_ADDR=${KEYCLOAK_DATABASE_HOST}
+      - DB_VENDOR=${KEYCLOAK_DATABASE_VENDOR}
+    networks:
+      internal:
+    depends_on:
+      - keycloakdb
+
+  keycloakdb:
+    image: postgres:${POSTGRES_VERSION}
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=${KEYCLOAK_DATABASE_USER}
+      - POSTGRES_PASSWORD=${KEYCLOAK_DATABASE_PASSWORD}
+      - POSTGRES_DB=${KEYCLOAK_DATABASE_NAME}
+    volumes:
+      - keycloak-postgres:/var/lib/postgresql/data
+    networks:
+      internal:
+
+volumes:
+  keycloak-postgres:
+
+networks:
+  internal:
