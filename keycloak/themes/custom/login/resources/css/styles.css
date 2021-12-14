@@ -1,0 +1,20 @@
+:root {
+    --pf-global--primary-color--100: #ff0054;
+    --pf-global--primary-color--200: #d60248;
+    --default-background-color: #97A1CDFF;
+    --link-hover-color: #02679a;
+}
+
+.login-pf body {
+    background-image: url('../img/pexels-pixabay-358312.jpg'),
+    linear-gradient(135deg, var(--default-background-color) 0%, #A96699FF 100%);
+}
+
+.login-pf a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+.pf-c-form-control {
+    --pf-global--primary-color--100: unset;
+}

@@ -10,6 +10,7 @@ To learn how to set up a project like this one, check out the following articles
 
 * [Keycloak in Docker #1 – How to run Keycloak in a Docker container](https://keepgrowing.in/tools/keycloak-in-docker-1-how-to-run-keycloak-in-a-docker-container/)
 * [Keycloak in Docker #2 – How to import a Keycloak realm](https://keepgrowing.in/tools/keycloak-in-docker-2-how-to-import-a-keycloak-realm/)
+* [Keycloak in Docker #3 – How to customise Keycloak themes](https://keepgrowing.in/tools/keycloak-in-docker-3-how-to-customise-keycloak-themes/)
 
 ## Getting started
 
@@ -67,6 +68,10 @@ Below you'll find a list of default user accounts.
 
 * Dockerized Keycloak server and its PostgreSQL database
 * Default Example-Realm is imported when the `keycloak` container starts
+* Keycloak themes are customized for the Login type:
+
+![customised login page screenshot](readme-images/login-customised.png)
+
 
 ## Built With
 

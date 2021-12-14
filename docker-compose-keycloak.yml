@@ -16,6 +16,7 @@ services:
     volumes:
       - ./keycloak/realms/realm-export.json:/tmp/realm-export.json
       - ./keycloak/scripts/disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli
+      - ./keycloak/themes/custom:/opt/jboss/keycloak/themes/custom
     networks:
       internal:
     depends_on:
