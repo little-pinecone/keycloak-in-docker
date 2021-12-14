@@ -12,6 +12,9 @@ services:
       - DB_PASSWORD=${KEYCLOAK_DATABASE_PASSWORD}
       - DB_ADDR=${KEYCLOAK_DATABASE_HOST}
       - DB_VENDOR=${KEYCLOAK_DATABASE_VENDOR}
+      - KEYCLOAK_IMPORT=/tmp/realm-export.json
+    volumes:
+      - ./keycloak/realms/realm-export.json:/tmp/realm-export.json
     networks:
       internal:
     depends_on:

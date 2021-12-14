@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "username": "christina",
+      "enabled": true,
+      "email": "christina@test.com",
+      "firstName": "Christina",
+      "lastName": "Travis",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "realmRoles": [
+        "user",
+        "chief-operating-officer"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username": "hanna",
+      "enabled": true,
+      "email": "hanna@test.com",
+      "firstName": "Hanna",
+      "lastName": "Davis",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username": "carlo",
+      "enabled": true,
+      "email": "carlo@test.com",
+      "firstName": "Carlo",
+      "lastName": "Velazquez",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username": "noel",
+      "enabled": true,
+      "email": "noel@test.com",
+      "firstName": "Noel",
+      "lastName": "Horton",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "test"
+        }
+      ],
+      "realmRoles": [
+        "user"
+      ],
+      "clientRoles": {
+        "account": [
+          "view-profile",
+          "manage-account"
+        ]
+      }
+    }
+  ]
+}
