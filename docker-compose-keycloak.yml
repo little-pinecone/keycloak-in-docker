@@ -15,6 +15,7 @@ services:
       - KEYCLOAK_IMPORT=/tmp/realm-export.json
     volumes:
       - ./keycloak/realms/realm-export.json:/tmp/realm-export.json
+      - ./keycloak/scripts/disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli
     networks:
       internal:
     depends_on:
