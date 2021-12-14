@@ -68,10 +68,18 @@ Below you'll find a list of default user accounts.
 
 * Dockerized Keycloak server and its PostgreSQL database
 * Default Example-Realm is imported when the `keycloak` container starts
-* Keycloak themes are customized for the Login type:
+* Keycloak themes are customized for the Login and Account types:
 
 ![customised login page screenshot](readme-images/login-customised.png)
 
+![customised account page screenshot](readme-images/account-customised.png)
+
+## Deploying to production
+
+The Keycloak theme caching is disabled to allow for fast and convenient theme editing. Remember to re-enable caching in 
+production as it will significantly impact performance. To do this, remove the 
+`- ./keycloak/scripts/disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli` volume from the
+[docker-compose-keycloak.yml](docker-compose-keycloak.yml) file.
 
 ## Built With
 

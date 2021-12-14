@@ -1,0 +1,14 @@
+:root {
+    --pf-global--primary-color--100: #ff0054;
+    --pf-global--primary-color--200: #d60248;
+    --pf-global--primary-color--dark-100: var(--pf-global--primary-color--200);
+}
+
+.pf-c-data-list {
+    --pf-global--primary-color--100: unset;
+}
+
+.pf-c-button {
+    --pf-c-button--m-secondary--hover--Color: var(--pf-global--primary-color--200);
+    --pf-c-button--m-secondary--hover--BorderColor: var(--pf-c-button--m-secondary--hover--Color);
+}
